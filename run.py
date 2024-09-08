@@ -1,8 +1,15 @@
 def get_shopping_list():
+    """
+    Get items to buy input from the user.
+    Run a while loop to collect a valid string of items from the user
+    via the terminal, each beginning with prompt > . 
+    The loop will repeatedly request data, until the user type DONE
+    to terminate it and print shopping list.
+
+    """
 
     #create a list to keep new items
     grocery_shopping_list = []
-
 
     #guide on how to use this simple shopping list app    
     print("Type what do I need to buy")
@@ -25,4 +32,10 @@ def get_shopping_list():
     for item in grocery_shopping_list:
         print(item)
 
-get_shopping_list()
+def main():
+    """
+    Run program function
+    """
+    get_shopping_list()
+    
+main()
